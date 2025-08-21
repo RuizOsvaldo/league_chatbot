@@ -1,0 +1,44 @@
+# Chatbot Course Requirements
+# The LEAGUE of Amazing Programmers
+# Build Your Own AI Chatbot in 6 Days!
+
+# Core Framework - The magic that makes your chatbot work
+streamlit>=1.28.0
+
+# Data Handling - For analytics and data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Beautiful Charts - Make your analytics look amazing
+plotly>=5.15.0
+
+# Date & Time - For timestamps and scheduling
+python-dateutil>=2.8.0
+
+# Optional but recommended for advanced features:
+# Uncomment these if you want to add extra capabilities
+
+# For more advanced text processing (sentiment analysis, etc.)
+# textblob>=0.17.1
+
+# For word clouds in analytics
+# wordcloud>=1.9.0
+
+# For emoji support
+# emoji>=2.8.0
+
+# For API integrations (weather, jokes, facts)
+# requests>=2.31.0
+
+# For markdown to PDF export
+# markdown>=3.5
+# pdfkit>=1.0.0
+
+# Note: SQLite3 comes built-in with Python, no need to install!
+# Database functionality works out of the box 💾
+
+# Deployment Notes:
+# - Keep this file minimal for faster deployment
+# - Streamlit Community Cloud has limited resources
+# - Add only what you actually use in your chatbot
+# - Test locally before deploying!
