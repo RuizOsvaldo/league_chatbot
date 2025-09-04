@@ -12,8 +12,12 @@ numpy>=1.24.0
 # Beautiful Charts - Make your analytics look amazing
 plotly>=5.15.0
 
+# API Integration - Connect to the real world! 🌐
+requests>=2.31.0
+
 # Date & Time - For timestamps and scheduling
 python-dateutil>=2.8.0
+pytz>=2023.3
 
 # Optional but recommended for advanced features:
 # Uncomment these if you want to add extra capabilities
@@ -27,9 +31,6 @@ python-dateutil>=2.8.0
 # For emoji support
 # emoji>=2.8.0
 
-# For API integrations (weather, jokes, facts)
-# requests>=2.31.0
-
 # For markdown to PDF export
 # markdown>=3.5
 # pdfkit>=1.0.0
@@ -37,8 +38,22 @@ python-dateutil>=2.8.0
 # Note: SQLite3 comes built-in with Python, no need to install!
 # Database functionality works out of the box 💾
 
+# New in Day 3: API Integration 🌐
+# The requests library lets your chatbot:
+# - Get real-time weather data
+# - Fetch fresh jokes from the internet
+# - Access live news and facts
+# - Connect to any web service!
+
 # Deployment Notes:
 # - Keep this file minimal for faster deployment
 # - Streamlit Community Cloud has limited resources
 # - Add only what you actually use in your chatbot
 # - Test locally before deploying!
+
+# Free APIs that work great with this course:
+# Weather: openweathermap.org, weatherapi.com
+# Jokes: official-joke-api.appspot.com
+# Facts: uselessfacts.jsph.pl, numbersapi.com
+# Quotes: quotable.io, zenquotes.io
+# News: newsapi.org (free tier available)

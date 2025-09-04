@@ -8,6 +8,7 @@ Run: streamlit run day_1_example.py
 
 import streamlit as st
 from datetime import datetime
+import pytz
 
 # Page setup - this makes your app look good!
 st.set_page_config(
@@ -25,7 +26,7 @@ st.header("📚 What We're Learning")
 
 st.info("""
 **Today's Goals:**
-- ✅ Create a chat interface
+- ✅ Create a chat interface using Streamlit
 - ✅ Display messages
 - ✅ Get user input
 - ✅ Make the bot respond
@@ -101,8 +102,10 @@ st.sidebar.metric("Bot Messages", bot_messages)
 
 # Add current time
 st.sidebar.markdown("---")
-current_time = datetime.now().strftime("%I:%M %p")
-st.sidebar.write(f"🕐 Current Time: {current_time}")
+pst_tz = pytz.timezone('US/Pacific')
+pst_time = datetime.now(pst_tz)
+current_time_pst = pst_time.strftime("%I:%M %p PST")
+st.sidebar.write(f"🕐 Current Time: {current_time_pst}")
 
 # Section 5: Learning Tips
 with st.expander("💡 How This Works"):
